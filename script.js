@@ -189,11 +189,10 @@ let html = `
 pregunta.opciones.forEach((opcion,index)=>{
 
 html += `
-<label>
-<input type="radio" name="respuesta" value="${index}">
-${opcion}
+<label class="opcion">
+    <input type="radio" name="respuesta" value="${index}">
+    <span>${opcion}</span>
 </label>
-<br><br>
 `;
 
 });
