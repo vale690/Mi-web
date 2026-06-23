@@ -43,11 +43,11 @@ botones[4].addEventListener("click", () => {
 botones[5].addEventListener("click", () => {
     mostrarSeccion("examen");
 });
+
+// BOTÓN INICIAR PRUEBA
 const btnIniciar = document.getElementById("btnIniciar");
 
-btnIniciar.addEventListener("click", () => {
-    alert("La prueba iniciará próximamente.");
-});
+// Preguntas
 const preguntas = [
 {
 pregunta: "¿Qué permite almacenar información en JavaScript?",
@@ -103,10 +103,12 @@ correcta: 1
 
 let preguntaActual = 0;
 
+// Iniciar examen
 btnIniciar.addEventListener("click", () => {
     mostrarPregunta();
 });
 
+// Mostrar pregunta
 function mostrarPregunta() {
 
     const area = document.getElementById("areaExamen");
@@ -118,12 +120,27 @@ function mostrarPregunta() {
 
         <p>${p.pregunta}</p>
 
-        <label><input type="radio" name="respuesta"> ${p.opciones[0]}</label><br><br>
+        <label>
+            <input type="radio" name="respuesta">
+            ${p.opciones[0]}
+        </label>
+        <br><br>
 
-        <label><input type="radio" name="respuesta"> ${p.opciones[1]}</label><br><br>
+        <label>
+            <input type="radio" name="respuesta">
+            ${p.opciones[1]}
+        </label>
+        <br><br>
 
-        <label><input type="radio" name="respuesta"> ${p.opciones[2]}</label><br><br>
+        <label>
+            <input type="radio" name="respuesta">
+            ${p.opciones[2]}
+        </label>
+        <br><br>
 
-        <label><input type="radio" name="respuesta"> ${p.opciones[3]}</label>
+        <label>
+            <input type="radio" name="respuesta">
+            ${p.opciones[3]}
+        </label>
     `;
 }
