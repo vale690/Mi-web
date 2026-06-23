@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú lateral -->
+    <aside class="menu">
+        <h2>JavaScript</h2>
+
+        <button>Inicio</button>
+        <button>Conceptos</button>
+        <button>Características</button>
+        <button>Funciones</button>
+        <button>Tabla</button>
+        <button>Examen</button>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="contenido">
+
+        <!-- Inicio -->
+        <section id="inicio">
+            <img src="img/inicio.png" alt="JavaScript">
+
+            <h1>Bienvenido(a)</h1>
+
+            <p>
+                Bienvenido(a) a nuestra página web sobre JavaScript.
+                Descubre cómo este lenguaje de programación hace posible
+                la creación de páginas web dinámicas, interactivas y modernas.
+                Explora sus conceptos, características y funciones más
+                importantes para conocer una de las herramientas más utilizadas
+                en el desarrollo web.
+            </p>
+        </section>
+
+        <!-- Conceptos -->
+        <section id="conceptos">
+            <img src="img/conceptos.png" alt="Conceptos JavaScript">
+
+            <h1>Conceptos de JavaScript</h1>
+
+            <p>
+                JavaScript utiliza diferentes conceptos fundamentales para crear
+                páginas web dinámicas e interactivas. Entre los más importantes
+                se encuentran las variables, que permiten almacenar datos;
+                las funciones, que ejecutan tareas específicas; los eventos,
+                que responden a las acciones del usuario; las condicionales,
+                que ayudan a tomar decisiones según determinadas condiciones;
+                y la función alert(), que muestra mensajes emergentes en pantalla.
+                Estos elementos son la base para desarrollar aplicaciones web modernas.
+            </p>
+        </section>
+
+        <!-- Características -->
+        <section id="caracteristicas">
+            <img src="img/caracteristicas.png" alt="Características JavaScript">
+
+            <h1>Características de JavaScript</h1>
+
+            <ul>
+                <li>Es un lenguaje de programación ampliamente utilizado en el desarrollo web.</li>
+                <li>Se ejecuta directamente en el navegador del usuario.</li>
+                <li>Permite crear páginas web dinámicas e interactivas.</li>
+                <li>Trabaja junto con HTML y CSS.</li>
+                <li>Responde a las acciones realizadas por el usuario.</li>
+                <li>Permite validar formularios y manipular contenido en tiempo real.</li>
+            </ul>
+        </section>
+
+        <!-- Funciones -->
+        <section id="funciones">
+            <img src="img/funciones.png" alt="Funciones JavaScript">
+
+            <h1>Funciones de JavaScript</h1>
+
+            <p>
+                JavaScript permite realizar múltiples funciones dentro de una página web.
+                Entre las más importantes se encuentran mostrar mensajes al usuario,
+                validar formularios, responder a eventos como clics o movimientos del mouse,
+                realizar cálculos matemáticos, modificar el contenido de una página en tiempo real
+                y crear aplicaciones web dinámicas e interactivas.
+            </p>
+        </section>
+
+        <!-- Tabla -->
+        <section id="tabla">
+            <img src="img/tabla.png" alt="Tabla JavaScript">
+
+            <h1>Tabla de Conceptos de JavaScript</h1>
+
+            <table border="1">
+                <tr>
+                    <th>Concepto</th>
+                    <th>Descripción</th>
+                    <th>Ejemplo</th>
+                </tr>
+
+                <tr>
+                    <td>Variable</td>
+                    <td>Permite almacenar datos dentro del programa.</td>
+                    <td>let nombre = "Juan";</td>
+                </tr>
+
+                <tr>
+                    <td>Función</td>
+                    <td>Ejecuta una tarea específica cuando es llamada.</td>
+                    <td>function saludar()</td>
+                </tr>
+
+                <tr>
+                    <td>Evento</td>
+                    <td>Detecta acciones realizadas por el usuario.</td>
+                    <td>onclick</td>
+                </tr>
+
+                <tr>
+                    <td>Condicional</td>
+                    <td>Evalúa condiciones para tomar decisiones.</td>
+                    <td>if(edad >= 18)</td>
+                </tr>
+
+                <tr>
+                    <td>Alert</td>
+                    <td>Muestra mensajes en una ventana emergente.</td>
+                    <td>alert("Hola")</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Examen -->
+        <section id="examen">
+            <img src="img/examen.png" alt="Examen JavaScript">
+
+            <h1>Examen de JavaScript</h1>
+
+            <label>Nombre:</label>
+            <input type="text">
+
+            <br><br>
+
+            <label>Apellido:</label>
+            <input type="text">
+
+            <h2>Instrucciones del Examen</h2>
+
+            <ul>
+                <li>Cada pregunta tiene 4 opciones de respuesta.</li>
+                <li>Solo una opción es correcta.</li>
+                <li>Debes seleccionar una respuesta para continuar.</li>
+                <li>Dispones de 10 minutos para completar el examen.</li>
+                <li>Al finalizar se mostrará automáticamente tu resultado.</li>
+                <li>Lee cada pregunta con atención antes de responder.</li>
+            </ul>
+
+            <button>Iniciar Prueba</button>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
