@@ -189,3 +189,9 @@ margin-right:10px;
 .opcion span{
     display:inline;
 }
+
+#caracteristicas ul{
+  text-align: center;
+  padding-left: 0;
+  list-style-position: inside;
+}
