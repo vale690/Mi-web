@@ -134,38 +134,76 @@
         </section>
 
         <!-- Examen -->
-        <section id="examen">
-            <img src="img/examen.png" alt="Examen JavaScript">
+  <section id="examen">
+    <img src="img/examen.png" alt="Examen JavaScript">
 
-            <h1>Examen de JavaScript</h1>
+    <h1>Examen de JavaScript</h1>
 
-            <label>Nombre:</label>
-            <input type="text">
+    <div id="inicioExamen">
 
-            <br><br>
+        <label>Nombre:</label>
+        <input type="text" id="nombre">
 
-            <label>Apellido:</label>
-            <input type="text">
+        <br><br>
 
-            <h2>Instrucciones del Examen</h2>
+        <label>Apellido:</label>
+        <input type="text" id="apellidos">
 
-            <ul>
-                <li>Cada pregunta tiene 4 opciones de respuesta.</li>
-                <li>Solo una opción es correcta.</li>
-                <li>Debes seleccionar una respuesta para continuar.</li>
-                <li>Dispones de 10 minutos para completar el examen.</li>
-                <li>Al finalizar se mostrará automáticamente tu resultado.</li>
-                <li>Lee cada pregunta con atención antes de responder.</li>
-            </ul>
+        <h2>Instrucciones del Examen</h2>
 
-            <button id="btnIniciar">Iniciar prueba</button>
+        <ul>
+            <li>Cada pregunta tiene 4 opciones de respuesta.</li>
+            <li>Solo una opción es correcta.</li>
+            <li>Debes seleccionar una respuesta para continuar.</li>
+            <li>Dispones de 10 minutos para completar el examen.</li>
+            <li>Al finalizar se mostrará automáticamente tu resultado.</li>
+            <li>Lee cada pregunta con atención antes de responder.</li>
+        </ul>
 
-            <div id="areaExamen"></div>
-        </section>
+        <button id="btnIniciar">Iniciar prueba</button>
+
+    </div>
+
+    <div id="areaExamen" style="display:none;">
+
+        <h3 id="nombreEstudiante"></h3>
+
+        <h3 id="tiempo">
+            Tiempo restante: 10:00
+        </h3>
+
+        <div id="contenedorPregunta"></div>
+
+        <button id="btnSiguiente">
+            Siguiente
+        </button>
+
+    </div>
+
+    <div id="resultado" style="display:none;">
+
+        <h2>Resultado Final</h2>
+
+        <p id="resultadoNombre"></p>
+
+        <p id="resultadoPuntaje"></p>
+
+        <h3 id="mensajeFinal"></h3>
+
+        <h2>Conclusión</h2>
+
+        <p>
+            JavaScript es uno de los lenguajes más importantes del desarrollo web porque permite crear páginas dinámicas e interactivas que mejoran la experiencia de los usuarios.
+        </p>
+
+    </div>
+
+</section>
 
     </main>
 
     <script src="script.js"></script>
 
+        
 </body>
 </html>
