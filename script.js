@@ -48,3 +48,82 @@ const btnIniciar = document.getElementById("btnIniciar");
 btnIniciar.addEventListener("click", () => {
     alert("La prueba iniciará próximamente.");
 });
+const preguntas = [
+{
+pregunta: "¿Qué permite almacenar información en JavaScript?",
+opciones: ["Eventos", "Funciones", "Variables", "Alertas"],
+correcta: 2
+},
+{
+pregunta: "¿Qué es una función en JavaScript?",
+opciones: ["Un navegador", "Un bloque de código que realiza una tarea específica", "Una imagen", "Un archivo HTML"],
+correcta: 1
+},
+{
+pregunta: "¿Cuál es la función de los eventos en JavaScript?",
+opciones: ["Cambiar colores", "Detectar acciones del usuario", "Crear tablas", "Guardar imágenes"],
+correcta: 1
+},
+{
+pregunta: "¿Para qué sirven los condicionales?",
+opciones: ["Mostrar imágenes", "Crear botones", "Tomar decisiones según una condición", "Cerrar la página"],
+correcta: 2
+},
+{
+pregunta: "¿Qué hace la función alert()?",
+opciones: ["Reproduce videos", "Muestra mensajes emergentes", "Guarda datos", "Cambia el fondo"],
+correcta: 1
+},
+{
+pregunta: "¿Qué es JavaScript?",
+opciones: ["Un sistema operativo", "Un lenguaje de programación", "Un navegador web", "Una base de datos"],
+correcta: 1
+},
+{
+pregunta: "¿Dónde se ejecuta JavaScript principalmente?",
+opciones: ["En el navegador del usuario", "En una impresora", "En una calculadora", "En un PDF"],
+correcta: 0
+},
+{
+pregunta: "¿Con qué tecnologías trabaja JavaScript?",
+opciones: ["Word y Excel", "HTML y CSS", "Paint y Photoshop", "Windows y Linux"],
+correcta: 1
+},
+{
+pregunta: "¿Cuál es una característica importante de JavaScript?",
+opciones: ["Crear páginas dinámicas e interactivas", "Imprimir documentos", "Diseñar edificios", "Crear videojuegos 3D"],
+correcta: 0
+},
+{
+pregunta: "¿Qué permite hacer JavaScript en una página web?",
+opciones: ["Solo mostrar texto", "Crear páginas dinámicas e interactivas", "Instalar programas", "Formatear discos"],
+correcta: 1
+}
+];
+
+let preguntaActual = 0;
+
+btnIniciar.addEventListener("click", () => {
+    mostrarPregunta();
+});
+
+function mostrarPregunta() {
+
+    const area = document.getElementById("areaExamen");
+
+    const p = preguntas[preguntaActual];
+
+    area.innerHTML = `
+        <h3>Pregunta ${preguntaActual + 1} de 10</h3>
+
+        <p>${p.pregunta}</p>
+
+        <label><input type="radio" name="respuesta"> ${p.opciones[0]}</label><br><br>
+
+        <label><input type="radio" name="respuesta"> ${p.opciones[1]}</label><br><br>
+
+        <label><input type="radio" name="respuesta"> ${p.opciones[2]}</label><br><br>
+
+        <label><input type="radio" name="respuesta"> ${p.opciones[3]}</label>
+    `;
+}
