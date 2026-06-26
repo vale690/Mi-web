@@ -221,3 +221,21 @@ flex-shrink:0;
 .opcion span{
 display:inline;
 }
+
+/* Inicio del examen */
+#inicioExamen{
+    max-width:600px;
+    margin:0 auto;
+}
+
+#inicioExamen ul{
+    width:fit-content;
+    margin:20px auto;
+    padding-left:25px;
+    text-align:left;
+    list-style-position:outside;
+}
+
+#inicioExamen li{
+    margin-bottom:12px;
+}
