@@ -108,15 +108,14 @@ margin-bottom:12px;
 }
 
 /* Características */
-#caracteristicas ul{
+#caracteristicas ol{
 max-width:600px;
 margin:20px auto;
 padding-left:25px;
 text-align:left;
-list-style-position:outside;
 }
 
-#caracteristicas li{
+#caracteristicas ol li{
 margin-bottom:12px;
 }
 
